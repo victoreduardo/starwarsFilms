@@ -652,4 +652,5 @@
         <image name="ic_user" width="16" height="19"/>
         <image name="ic_user_detail" width="35" height="42"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

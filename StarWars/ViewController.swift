@@ -40,6 +40,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
          Esconde o NavigationBar
          */
         self.navigationController?.navigationBar.isHidden = true
+        
+        
+        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for:.selected)
+        self.tabBarController?.tabBar.tintColor = UIColor.white
     }
     
     override func didReceiveMemoryWarning() {
