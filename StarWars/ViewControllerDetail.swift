@@ -9,33 +9,28 @@
 import UIKit
 
 class ViewControllerDetail: UIViewController {
-
+    
+    var move: Filme? // Variável declarada como opicional
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var openingCrawlTextView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        /*:
-            Exibi o NavigationBar
-         */
-       self.navigationController?.navigationBar.isHidden = false
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
         
         /*:
-         Esconde o NavigationBar
+         Exibi o NavigationBar
          */
-         self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.isHidden = false
+        self.openingCrawlTextView.isUserInteractionEnabled = false
+        
+        if let m = move {
+            titleLabel.text = m.title
+            openingCrawlTextView.text = m.opening_crawl
+        }
+        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }
