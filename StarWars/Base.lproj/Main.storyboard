@@ -112,7 +112,6 @@
                                         <connections>
                                             <outlet property="releaseDateLabel" destination="IP0-lU-ULx" id="t3y-GA-uyl"/>
                                             <outlet property="titleLabel" destination="tUD-8n-sqc" id="B5K-GX-bpm"/>
-                                            <segue destination="p6h-GW-r5F" kind="showDetail" id="V9m-kj-mWI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -164,11 +163,30 @@
                     <navigationItem key="navigationItem" id="cZv-ho-6Y4"/>
                     <connections>
                         <outlet property="vrTableView" destination="fco-qY-S3s" id="OFB-x5-Kzw"/>
+                        <segue destination="UHb-cC-JSD" kind="show" identifier="moveSegueToMoveDetail" id="qUF-dH-nFh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1096.875" y="97.183098591549296"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9WC-XP-GgB">
+            <objects>
+                <viewController id="UHb-cC-JSD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JqB-PU-Nxp"/>
+                        <viewControllerLayoutGuide type="bottom" id="uOF-O1-UgV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nu0-NZ-4fY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mq1-ck-oCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="922"/>
         </scene>
         <!--Personagens-->
         <scene sceneID="Gby-Jm-2KG">
@@ -189,30 +207,13 @@
             </objects>
             <point key="canvasLocation" x="2209" y="98"/>
         </scene>
-        <!--View Controller Detail-->
-        <scene sceneID="GDX-LD-vfe">
-            <objects>
-                <viewController id="p6h-GW-r5F" customClass="ViewControllerDetail" customModule="StarWars" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IrC-uX-LQn"/>
-                        <viewControllerLayoutGuide type="bottom" id="0rZ-Qc-FHR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CWn-ZO-5xE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wKL-Xh-h4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1097" y="932"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bo3-eL-ENA">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9il-BA-zwq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="7CB-4j-CPL">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

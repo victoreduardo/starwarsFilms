@@ -20,20 +20,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         vrFilmes = ParseJSON().buscaDados()
+    
+//        let url = Bundle.main.url(forResource: "theme", withExtension: "mp3")!
+//        do {
+//            player = try AVAudioPlayer(contentsOf: url)
+//            guard let player = player else { return }
+//            
+//            player.prepareToPlay()
+//            player.play()
+//        } catch let error as NSError {
+//            print(error.description)
+//        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let url = Bundle.main.url(forResource: "theme", withExtension: "mp3")!
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            guard let player = player else { return }
-            
-            player.prepareToPlay()
-            player.play()
-        } catch let error as NSError {
-            print(error.description)
-        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,18 +70,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Metodos de delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
+        self.performSegue(withIdentifier: "moveSegueToMoveDetail", sender: nil)
     }
     
     //Implementacao do metodo chamado para a troca de tela
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if let indexPath = vrTableView.indexPathForSelectedRow
-        {
-            let telaProduto = segue.destination as! ViewControllerDetail
+//        if let indexPath = vrTableView.indexPathForSelectedRow
+//        {
+//            let telaProduto = segue.destination as! ViewControllerDetail
             //            telaProduto.titulo = cardapio[indexPath.section]
             //            telaProduto.nome = itensCardapio[indexPath.section][indexPath.row]
             //            telaProduto.imagem = UIImage(named: itensCardapio[indexPath.section][indexPath.row])
-        }
+//        }
     }
     
     
