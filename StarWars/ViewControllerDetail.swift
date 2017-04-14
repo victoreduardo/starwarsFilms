@@ -13,14 +13,20 @@ class ViewControllerDetail: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        /*:
+            Exibi o NavigationBar
+         */
+       self.navigationController?.navigationBar.isHidden = false
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        /*:
+         Esconde o NavigationBar
+         */
+         self.navigationController?.navigationBar.isHidden = false
+    }
 
     /*
     // MARK: - Navigation

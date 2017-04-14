@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Filmes-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarWars" customModuleProvider="target" sceneMemberID="viewController">
@@ -159,8 +159,8 @@
                             <constraint firstItem="La1-jx-IgY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="shv-Ri-p9d"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Filmes" image="ic_camera" id="Aph-8U-18L"/>
                     <navigationItem key="navigationItem" id="cZv-ho-6Y4"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="vrTableView" destination="fco-qY-S3s" id="OFB-x5-Kzw"/>
                         <segue destination="UHb-cC-JSD" kind="show" identifier="moveSegueToMoveDetail" id="qUF-dH-nFh"/>
@@ -168,12 +168,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1096.875" y="97.183098591549296"/>
+            <point key="canvasLocation" x="1451" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Detail-->
         <scene sceneID="9WC-XP-GgB">
             <objects>
-                <viewController id="UHb-cC-JSD" sceneMemberID="viewController">
+                <viewController id="UHb-cC-JSD" customClass="ViewControllerDetail" customModule="StarWars" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JqB-PU-Nxp"/>
                         <viewControllerLayoutGuide type="bottom" id="uOF-O1-UgV"/>
@@ -186,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mq1-ck-oCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="922"/>
+            <point key="canvasLocation" x="1449" y="888"/>
         </scene>
         <!--Personagens-->
         <scene sceneID="Gby-Jm-2KG">
@@ -205,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yL8-hc-2wK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2209" y="98"/>
+            <point key="canvasLocation" x="3206.25" y="97.183098591549296"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bo3-eL-ENA">
@@ -220,13 +220,32 @@
                         <color key="barTintColor" red="0.41990017889999998" green="0.53416097159999998" blue="0.58749759199999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ue2-2g-QZb"/>
+                        <segue destination="0VM-5L-nDu" kind="relationship" relationship="viewControllers" id="ue2-2g-QZb"/>
                         <segue destination="7Pd-g0-17W" kind="relationship" relationship="viewControllers" id="dSv-Km-r2W"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xmt-aH-0Nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1678" y="-644"/>
+        </scene>
+        <!--Filmes-->
+        <scene sceneID="Vdb-Tn-1HK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0VM-5L-nDu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Filmes" image="ic_camera" id="Aph-8U-18L"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jvU-pC-SXr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OtC-UW-Tzw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89k-2k-Ixw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="81"/>
         </scene>
     </scenes>
     <resources>
