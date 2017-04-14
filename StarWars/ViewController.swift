@@ -38,11 +38,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let celula = tableView.dequeueReusableCell(withIdentifier: "celula") as! Celula
-        celula.vrTitle.text = vrFilmes[indexPath.row].title
-        celula.vrOpening_crawl.text = vrFilmes[indexPath.row].opening_crawl
-        celula.vrDirector.text = String(vrFilmes[indexPath.row].director)
+        celula.titleLabel.text = vrFilmes[indexPath.row].title
+        celula.releaseDateLabel.text = vrFilmes[indexPath.row].release_date
         
         return celula
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
     }
     
     //Metodos de delegate

@@ -10,7 +10,7 @@ import UIKit
 
 class Celula: UITableViewCell
 {
-    @IBOutlet weak var vrTitle: UILabel!
-    @IBOutlet weak var vrDirector: UILabel!
-    @IBOutlet weak var vrOpening_crawl: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var releaseDateLabel: UILabel!
+    
 }

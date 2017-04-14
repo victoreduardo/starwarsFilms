@@ -16,6 +16,7 @@
 		7F60DCDA1EA133670028BBF0 /* Celula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F60DCD91EA133670028BBF0 /* Celula.swift */; };
 		7F60DCDC1EA13C920028BBF0 /* ViewControllerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */; };
 		9D576F5F1EA1444400947013 /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576F5E1EA1444400947013 /* Filme.swift */; };
+		9D576F621EA1538100947013 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576F611EA1538100947013 /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7F60DCD91EA133670028BBF0 /* Celula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celula.swift; sourceTree = "<group>"; };
 		7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDetail.swift; sourceTree = "<group>"; };
 		9D576F5E1EA1444400947013 /* Filme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
+		9D576F611EA1538100947013 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +86,21 @@
 		9D576F5D1EA1441B00947013 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9D576F601EA1534200947013 /* common */,
 				7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */,
 				7F60DCD91EA133670028BBF0 /* Celula.swift */,
 				7F60DCC71EA12EE50028BBF0 /* ViewController.swift */,
 				7F60DCC91EA12EE50028BBF0 /* Main.storyboard */,
 			);
 			name = ui;
+			sourceTree = "<group>";
+		};
+		9D576F601EA1534200947013 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				9D576F611EA1538100947013 /* CustomView.swift */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				7F60DCC81EA12EE50028BBF0 /* ViewController.swift in Sources */,
 				9D576F5F1EA1444400947013 /* Filme.swift in Sources */,
 				7F60DCDC1EA13C920028BBF0 /* ViewControllerDetail.swift in Sources */,
+				9D576F621EA1538100947013 /* CustomView.swift in Sources */,
 				7F60DCDA1EA133670028BBF0 /* Celula.swift in Sources */,
 				7F60DCC61EA12EE50028BBF0 /* AppDelegate.swift in Sources */,
 				7F60DCD81EA130D50028BBF0 /* ParseJSON.swift in Sources */,
