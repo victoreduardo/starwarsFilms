@@ -7,18 +7,35 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var vrFilmes:[Filme]!
-
+    var player : AVAudioPlayer?
+    
     @IBOutlet weak var vrTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         vrFilmes = ParseJSON().buscaDados()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let url = Bundle.main.url(forResource: "theme", withExtension: "mp3")!
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -59,12 +76,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let indexPath = vrTableView.indexPathForSelectedRow
         {
             let telaProduto = segue.destination as! ViewControllerDetail
-//            telaProduto.titulo = cardapio[indexPath.section]
-//            telaProduto.nome = itensCardapio[indexPath.section][indexPath.row]
-//            telaProduto.imagem = UIImage(named: itensCardapio[indexPath.section][indexPath.row])
+            //            telaProduto.titulo = cardapio[indexPath.section]
+            //            telaProduto.nome = itensCardapio[indexPath.section][indexPath.row]
+            //            telaProduto.imagem = UIImage(named: itensCardapio[indexPath.section][indexPath.row])
         }
     }
-
-
+    
+    
 }
 

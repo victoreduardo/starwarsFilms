@@ -17,6 +17,8 @@
 		7F60DCDC1EA13C920028BBF0 /* ViewControllerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */; };
 		9D576F5F1EA1444400947013 /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576F5E1EA1444400947013 /* Filme.swift */; };
 		9D576F621EA1538100947013 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576F611EA1538100947013 /* CustomView.swift */; };
+		9D576F641EA1625400947013 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D576F631EA1625400947013 /* theme.mp3 */; };
+		9D576F681EA1641400947013 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D576F671EA1641400947013 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDetail.swift; sourceTree = "<group>"; };
 		9D576F5E1EA1444400947013 /* Filme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
 		9D576F611EA1538100947013 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		9D576F631EA1625400947013 /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theme.mp3; sourceTree = "<group>"; };
+		9D576F671EA1641400947013 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D576F681EA1641400947013 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,7 @@
 			children = (
 				7F60DCC41EA12EE50028BBF0 /* StarWars */,
 				7F60DCC31EA12EE50028BBF0 /* Products */,
+				9D576F661EA1641400947013 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +70,7 @@
 		7F60DCC41EA12EE50028BBF0 /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
+				9D576F651EA1625700947013 /* sounds */,
 				9D576F5C1EA1440700947013 /* data */,
 				9D576F5D1EA1441B00947013 /* ui */,
 				7F60DCC51EA12EE50028BBF0 /* AppDelegate.swift */,
@@ -101,6 +108,22 @@
 				9D576F611EA1538100947013 /* CustomView.swift */,
 			);
 			name = common;
+			sourceTree = "<group>";
+		};
+		9D576F651EA1625700947013 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9D576F631EA1625400947013 /* theme.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		9D576F661EA1641400947013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D576F671EA1641400947013 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D576F641EA1625400947013 /* theme.mp3 in Resources */,
 				7F60DCD01EA12EE50028BBF0 /* LaunchScreen.storyboard in Resources */,
 				7F60DCCD1EA12EE50028BBF0 /* Assets.xcassets in Resources */,
 				7F60DCCB1EA12EE50028BBF0 /* Main.storyboard in Resources */,
