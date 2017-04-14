@@ -15,4 +15,4 @@ class Filme: NSObject {
     var director:String!
     var release_date:String!
     var url:String!
-}
+    var caracters:[String]!}
