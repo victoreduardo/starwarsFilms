@@ -15,6 +15,7 @@
 		7F60DCD81EA130D50028BBF0 /* ParseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F60DCD71EA130D50028BBF0 /* ParseJSON.swift */; };
 		7F60DCDA1EA133670028BBF0 /* Celula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F60DCD91EA133670028BBF0 /* Celula.swift */; };
 		7F60DCDC1EA13C920028BBF0 /* ViewControllerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */; };
+		9D576F5F1EA1444400947013 /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576F5E1EA1444400947013 /* Filme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7F60DCD71EA130D50028BBF0 /* ParseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseJSON.swift; sourceTree = "<group>"; };
 		7F60DCD91EA133670028BBF0 /* Celula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celula.swift; sourceTree = "<group>"; };
 		7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDetail.swift; sourceTree = "<group>"; };
+		9D576F5E1EA1444400947013 /* Filme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +62,34 @@
 		7F60DCC41EA12EE50028BBF0 /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
+				9D576F5C1EA1440700947013 /* data */,
+				9D576F5D1EA1441B00947013 /* ui */,
 				7F60DCC51EA12EE50028BBF0 /* AppDelegate.swift */,
-				7F60DCC71EA12EE50028BBF0 /* ViewController.swift */,
-				7F60DCC91EA12EE50028BBF0 /* Main.storyboard */,
 				7F60DCCC1EA12EE50028BBF0 /* Assets.xcassets */,
 				7F60DCCE1EA12EE50028BBF0 /* LaunchScreen.storyboard */,
 				7F60DCD11EA12EE50028BBF0 /* Info.plist */,
-				7F60DCD71EA130D50028BBF0 /* ParseJSON.swift */,
-				7F60DCD91EA133670028BBF0 /* Celula.swift */,
-				7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */,
 			);
 			path = StarWars;
+			sourceTree = "<group>";
+		};
+		9D576F5C1EA1440700947013 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				7F60DCD71EA130D50028BBF0 /* ParseJSON.swift */,
+				9D576F5E1EA1444400947013 /* Filme.swift */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		9D576F5D1EA1441B00947013 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */,
+				7F60DCD91EA133670028BBF0 /* Celula.swift */,
+				7F60DCC71EA12EE50028BBF0 /* ViewController.swift */,
+				7F60DCC91EA12EE50028BBF0 /* Main.storyboard */,
+			);
+			name = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F60DCC81EA12EE50028BBF0 /* ViewController.swift in Sources */,
+				9D576F5F1EA1444400947013 /* Filme.swift in Sources */,
 				7F60DCDC1EA13C920028BBF0 /* ViewControllerDetail.swift in Sources */,
 				7F60DCDA1EA133670028BBF0 /* Celula.swift in Sources */,
 				7F60DCC61EA12EE50028BBF0 /* AppDelegate.swift in Sources */,
@@ -311,6 +331,7 @@
 				7F60DCD61EA12EE50028BBF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

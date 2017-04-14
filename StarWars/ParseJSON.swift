@@ -10,15 +10,15 @@
 import Foundation
 
 //CLASSE UTILIZADA PARA REPRESENTAR O MODELO DE DADOS
-class Filme
-{
-    var producer:String!
-    var title:String!
-    var opening_crawl:String!
-    var director:String!
-    var release_date:String!
-    var url:String!
-}
+//class Filme
+//{
+//    var producer:String!
+//    var title:String!
+//    var opening_crawl:String!
+//    var director:String!
+//    var release_date:String!
+//    var url:String!
+//}
 
 class ParseJSON {
     func buscaDados()->[Filme]

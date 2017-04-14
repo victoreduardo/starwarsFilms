@@ -56,9 +56,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let indexPath = vrTableView.indexPathForSelectedRow
         {
             let telaProduto = segue.destination as! ViewControllerDetail
-            telaProduto.titulo = cardapio[indexPath.section]
-            telaProduto.nome = itensCardapio[indexPath.section][indexPath.row]
-            telaProduto.imagem = UIImage(named: itensCardapio[indexPath.section][indexPath.row])
+//            telaProduto.titulo = cardapio[indexPath.section]
+//            telaProduto.nome = itensCardapio[indexPath.section][indexPath.row]
+//            telaProduto.imagem = UIImage(named: itensCardapio[indexPath.section][indexPath.row])
         }
     }
 
