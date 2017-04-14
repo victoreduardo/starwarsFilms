@@ -22,6 +22,7 @@
 		9D576F6A1EA17D6100947013 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576F691EA17D6100947013 /* Person.swift */; };
 		9D576F6C1EA17D9D00947013 /* ViewControllerPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576F6B1EA17D9D00947013 /* ViewControllerPeople.swift */; };
 		9D576F6E1EA17DB000947013 /* CelulaPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576F6D1EA17DB000947013 /* CelulaPerson.swift */; };
+		9D576F701EA18CE100947013 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576F6F1EA18CE100947013 /* PersonDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		9D576F691EA17D6100947013 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9D576F6B1EA17D9D00947013 /* ViewControllerPeople.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPeople.swift; sourceTree = "<group>"; };
 		9D576F6D1EA17DB000947013 /* CelulaPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelulaPerson.swift; sourceTree = "<group>"; };
+		9D576F6F1EA18CE100947013 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +102,10 @@
 		9D576F5D1EA1441B00947013 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9D576F721EA1930800947013 /* person */,
+				9D576F711EA1930100947013 /* move */,
 				9D576F601EA1534200947013 /* common */,
-				7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */,
-				7F60DCD91EA133670028BBF0 /* Celula.swift */,
-				7F60DCC71EA12EE50028BBF0 /* ViewController.swift */,
 				7F60DCC91EA12EE50028BBF0 /* Main.storyboard */,
-				9D576F6B1EA17D9D00947013 /* ViewControllerPeople.swift */,
-				9D576F6D1EA17DB000947013 /* CelulaPerson.swift */,
 			);
 			name = ui;
 			sourceTree = "<group>";
@@ -133,6 +132,26 @@
 				9D576F671EA1641400947013 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D576F711EA1930100947013 /* move */ = {
+			isa = PBXGroup;
+			children = (
+				7F60DCC71EA12EE50028BBF0 /* ViewController.swift */,
+				7F60DCDB1EA13C920028BBF0 /* ViewControllerDetail.swift */,
+				7F60DCD91EA133670028BBF0 /* Celula.swift */,
+			);
+			name = move;
+			sourceTree = "<group>";
+		};
+		9D576F721EA1930800947013 /* person */ = {
+			isa = PBXGroup;
+			children = (
+				9D576F6D1EA17DB000947013 /* CelulaPerson.swift */,
+				9D576F6F1EA18CE100947013 /* PersonDetailViewController.swift */,
+				9D576F6B1EA17D9D00947013 /* ViewControllerPeople.swift */,
+			);
+			name = person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +230,7 @@
 				9D576F6E1EA17DB000947013 /* CelulaPerson.swift in Sources */,
 				7F60DCC81EA12EE50028BBF0 /* ViewController.swift in Sources */,
 				9D576F5F1EA1444400947013 /* Filme.swift in Sources */,
+				9D576F701EA18CE100947013 /* PersonDetailViewController.swift in Sources */,
 				7F60DCDC1EA13C920028BBF0 /* ViewControllerDetail.swift in Sources */,
 				9D576F621EA1538100947013 /* CustomView.swift in Sources */,
 				7F60DCDA1EA133670028BBF0 /* Celula.swift in Sources */,

@@ -67,6 +67,9 @@ class ViewControllerPeople: UIViewController , UITableViewDelegate, UITableViewD
     //Metodos de delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "personDetailViewController") as! PersonDetailViewController
+        viewController.person = vrPeople[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
