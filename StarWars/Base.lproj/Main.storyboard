@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Personagens-->
+        <!--Filmes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarWars" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fco-qY-S3s">
@@ -132,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cv1-Vf-lUB">
-                                        <rect key="frame" x="118.5" y="12" width="83" height="21"/>
+                                        <rect key="frame" x="119" y="12" width="83" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -160,7 +160,7 @@
                             <constraint firstItem="La1-jx-IgY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="shv-Ri-p9d"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Personagens" id="Aph-8U-18L"/>
+                    <tabBarItem key="tabBarItem" title="Filmes" image="ic_camera" id="Aph-8U-18L"/>
                     <navigationItem key="navigationItem" id="cZv-ho-6Y4"/>
                     <connections>
                         <outlet property="vrTableView" destination="fco-qY-S3s" id="OFB-x5-Kzw"/>
@@ -170,7 +170,7 @@
             </objects>
             <point key="canvasLocation" x="1096.875" y="97.183098591549296"/>
         </scene>
-        <!--Filmes-->
+        <!--Personagens-->
         <scene sceneID="Gby-Jm-2KG">
             <objects>
                 <viewController id="7Pd-g0-17W" sceneMemberID="viewController">
@@ -179,11 +179,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8Dy-Wt-aea"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tjc-V0-19k">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Filmes" id="IBq-Xo-ZpU"/>
+                    <tabBarItem key="tabBarItem" title="Personagens" id="IBq-Xo-ZpU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yL8-hc-2wK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,9 +212,11 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9il-BA-zwq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="7CB-4j-CPL">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="7CB-4j-CPL">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.41990017889999998" green="0.53416097159999998" blue="0.58749759199999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ue2-2g-QZb"/>
@@ -227,6 +229,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_camera" width="20" height="25"/>
         <image name="ic_move" width="21" height="26"/>
     </resources>
 </document>
