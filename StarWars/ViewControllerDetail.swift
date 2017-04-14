@@ -23,7 +23,7 @@ class ViewControllerDetail: UIViewController {
          Exibi o NavigationBar
          */
         self.navigationController?.navigationBar.isHidden = false
-        self.openingCrawlTextView.isUserInteractionEnabled = false
+        self.openingCrawlTextView.isEditable = false
         
         if let m = move {
             titleLabel.text = m.title

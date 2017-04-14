@@ -25,7 +25,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fco-qY-S3s">
                                 <rect key="frame" x="0.0" y="65" width="320" height="454"/>
-                                <color key="backgroundColor" red="0.79559785130000005" green="0.79620712999999999" blue="0.79569226500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="celula" rowHeight="90" id="WjD-Hk-Ukc" customClass="Celula" customModule="StarWars" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
@@ -103,7 +103,6 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.79559785127639771" green="0.79620712995529175" blue="0.79569226503372192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="qsF-B4-P4h" firstAttribute="top" secondItem="a57-Ln-H4a" secondAttribute="top" constant="8" id="47S-4S-kr8"/>
                                                 <constraint firstAttribute="trailing" secondItem="qsF-B4-P4h" secondAttribute="trailing" constant="8" id="OcD-gy-YHD"/>
@@ -147,7 +146,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92124956846237183" green="0.92194885015487671" blue="0.92135781049728394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="La1-jx-IgY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1jX-zr-OMv"/>
                             <constraint firstItem="02x-rA-HIO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="65s-yd-PwO"/>
