@@ -21,16 +21,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         vrFilmes = ParseJSON().buscaDados()
         
-        //        let url = Bundle.main.url(forResource: "theme", withExtension: "mp3")!
-        //        do {
-        //            player = try AVAudioPlayer(contentsOf: url)
-        //            guard let player = player else { return }
-        //
-        //            player.prepareToPlay()
-        //            player.play()
-        //        } catch let error as NSError {
-        //            print(error.description)
-        //        }
+                let url = Bundle.main.url(forResource: "theme", withExtension: "mp3")!
+                do {
+                    player = try AVAudioPlayer(contentsOf: url)
+                    guard let player = player else { return }
+        
+                    player.prepareToPlay()
+                    player.play()
+                } catch let error as NSError {
+                    print(error.description)
+                }
         
     }
     
